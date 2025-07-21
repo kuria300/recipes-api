@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+  .main_container{
+    @apply w-full min-h-[530px] bg-white-200 flex justify-center items-center space-x-4 py-10;
+  }
+  .main_button{
+    @apply bg-orange-400 text-white px-3 py-3 rounded hover:bg-blue-400 transition;
+  }
+  .section_conatiner{
+    @apply bg-white-100 max-w-7xl mx-auto px-20;
+  }
+  .card_grid{
+    @apply grid md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-1 gap-5;
+  }
+  .view-button{
+    @apply bg-orange-400 text-white px-3 py-3 rounded hover:bg-blue-400 transition;
+  }
+}
