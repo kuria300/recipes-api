@@ -15,7 +15,7 @@ const unsubscribe = () => {
     if(!token) return toast.error('Token is missing from confirmation link')
     setLoading(true)
   try{
-   await axios.post('http://localhost/5000/unsubscribe', {token})
+   await axios.post('https://recipes-api-2b1h.onrender.com/unsubscribe', {token})
    toast.success('unsubscribed successfully!')
   }catch(err){
     console.log('Error', err)

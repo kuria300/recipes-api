@@ -19,7 +19,7 @@ const Confirm = () => {
         }
 
       try{
-       await axios.post('http://localhost:5000/confirm', {token})
+       await axios.post('https://recipes-api-2b1h.onrender.com/confirm', {token})
        toast.success('Subscription confirmed!')
        setStatus('Subscription confirmed! You may close this page.')
       }catch(err){

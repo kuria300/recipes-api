@@ -36,7 +36,7 @@ router.post('/', async (req,res)=>{
     <p>Click the link below to confirm your subscription and you'll be on your way.</p>
     
     <p style="text-align: left; margin:30px 0;">
-      <a href="http://localhost:5173/confirm?token=${token}"
+      <a href="https://recipes-api-2b1h.onrender.com/confirm?token=${token}"
          style="background-color: #ff6600; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px;">
         Confirm your subscription
       </a>
@@ -47,7 +47,7 @@ router.post('/', async (req,res)=>{
     <hr style="margin: 10px 0; border: none; border-top: 1px solid #ddd;" />
 
     <p style="font-size: 18px; color: #888;">
-      <a href="http://localhost:5173/unsubscribe?token=${token}" style="color: #888;">Unsubscribe</a> |
+      <a href="https://recipes-api-2b1h.onrender.com/unsubscribe?token=${token}" style="color: #888;">Unsubscribe</a> |
     </p>
   </div>
     `

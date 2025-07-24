@@ -30,7 +30,7 @@ const AuthContext= createContext<AuthUserdata | null >(null); //creates new cont
             setUser(data) // data.data or {data}  now it becomes data at setuser
           toast.success('Login Successful')
 
-          await axios.post('http://localhost:5000/api/users', data)
+          await axios.post('https://recipes-api-2b1h.onrender.com/api/users', data)
         },
         onError: ()=>{
            toast.error('Login Failed')

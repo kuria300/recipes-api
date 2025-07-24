@@ -105,7 +105,7 @@ fetchRecipes()
   if (food.length === 0) return toast.error("No recipes selected");
 
    try{
-    await axios.post('http://localhost:5000/send-recipes', {email, food})
+    await axios.post('https://recipes-api-2b1h.onrender.com/send-recipes', {email, food})
     toast.success('Recipes Sent to Your Inbox!')
     setEmail('')
    }catch(err){
