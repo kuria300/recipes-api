@@ -5,14 +5,11 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    manifest: true,
-    rollupOptions: {
-      input: './src/main.jsx',
-    },
+    manifest: true, // optional, usually not needed for Vercel
   },
   server: {
     proxy: {
-      "/api": "http://localhost:5000/", // the address that u serve in the backend 
+      "/api": "http://localhost:5000/",
     },
   },
 })
