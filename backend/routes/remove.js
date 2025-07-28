@@ -5,7 +5,7 @@ app.use(express.json());
 const jwt= require('jsonwebtoken')
 
 router.get('/', async (req, res) => {
-  const { token } = req.query.body;
+  const { token } = req.query
 
   if (!token) return res.status(400).json({ error: 'token is Missing' });
 
