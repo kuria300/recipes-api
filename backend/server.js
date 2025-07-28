@@ -10,7 +10,7 @@ const Unsub= require('./routes/remove')
 conn();
 
 const corsOptions= {
-    origin: ["http://localhost:5173"]
+    origin: ["https://recipes-api-amber.vercel.app/"]
 }
 
 app.use(cors(corsOptions))
