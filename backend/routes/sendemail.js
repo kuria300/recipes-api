@@ -3,6 +3,8 @@ const router= express.Router()
 const nodemailer= require('nodemailer')
 const jwt = require('jsonwebtoken')
 
+app.use(express.json());
+
 router.post('/', async (req,res)=>{
   const { food, email}= req.body;
 
