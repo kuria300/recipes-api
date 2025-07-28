@@ -9,8 +9,8 @@ const confirmSub= require('./routes/confirm')
 const Unsub= require('./routes/remove')
 conn();
 
-const corsOptions= {
-    origin: ["https://recipes-api-amber.vercel.app/"]
+const corsOptions = {
+  origin: ["https://recipes-api-amber.vercel.app"] 
 }
 
 app.use(cors(corsOptions))
