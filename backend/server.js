@@ -19,6 +19,7 @@ const corsOptions = {
 app.use(cors(corsOptions))
 app.use(express.json())
 
+app.options('/send-recipes', cors(corsOptions));
 app.use('/api/users', userRoutes)
 app.use('/send-recipes', sendEmail)
 app.use('/confirm',confirmSub);
